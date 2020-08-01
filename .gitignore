@@ -1,0 +1,10 @@
+# MacOS dump
+.DS_Store
+*.DS_Store
+
+# Temp dir
+temp/*
+
+# Python related 
+__pycache__/*
+*.pyc
