@@ -1,0 +1,4 @@
+*.key
+*.pyc
+*.pdf
+*/__pycache__/*
