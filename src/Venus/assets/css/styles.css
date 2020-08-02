@@ -26,18 +26,6 @@ body{
     color: #F8F7FF;
 }
 
-.add-margin-top{
-    margin-top: -30px;
-}
-.add-margin-top{
-    margin-top: 10em;
-}
-.add-margin-left{
-    margin-left: 200px;
-}
-.add-margin-bottom{
-    margin-bottom: 40px;
-}
 .slidecontainer {
     width: 75%;
     margin-left: 40px;
@@ -152,21 +140,31 @@ body{
     color:#000;
 }
 
+.image-card{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 400px;
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 .card-title{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
     margin-top: 10px;
-    font-size: 24px;
-    color:#fff9ec 
+    font-size: 1.5em;
+    font-weight: 400;
+    color:#000; 
 }
 
 .card-text{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    margin-left: 5px;
-    margin-right: 5px;
+    font-size: 1.15em;
 }
+
+.card-body{
+    height: 10em;
+}
+
 .card-caption{
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
