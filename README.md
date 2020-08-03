@@ -16,8 +16,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About RASP
+Our solution basically uses historical job data for information about the location, salary and requirements and News articles that provide information about the future (ie. predictions).
 
-
+We decided the best way to work was to split our team into 3 divisions:
+  * **Philomath** - Data acquisition division
+  * **Venus** - Front-end division
+  * **Maeve** - Big Data & ML analysis division
 
 ### Built With
 Major frameworks that we used to build our project:
