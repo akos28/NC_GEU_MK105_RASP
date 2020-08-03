@@ -146,8 +146,8 @@ body{
     display: block;
     max-width: 400px;
     margin-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    /* padding-left: 2em;
+    padding-right: 2em; */
 }
 
 .card-title{
@@ -266,4 +266,26 @@ body{
 
 .topspace{
     margin-top: 100px;
+}
+
+.zoom-in, .zoom-in-special{
+    transition: transform .3010s;
+    z-index:5;
+}
+
+.zoom-in:hover, .zoom-in-special:hover{
+    /*
+        Compton wavelength of electron
+        λ_C = h / (m_e * c) => 2.4263 × 10^−12 m
+    */
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25);
+    z-index: 999;
+}
+
+.analytics-card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
 }
