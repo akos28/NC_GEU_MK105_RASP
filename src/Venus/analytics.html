@@ -23,7 +23,7 @@
 <body class="body">
 
     <nav class="navbar navbar-expand-xl navbar-light">
-        <a class="navbar-brand, left" href="analytics/">
+        <a class="navbar-brand, left" href="analytics">
             <img src="assets/img/Logo-DarkBlue.png" alt="Logo" width ="85px" height="75px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,16 +44,16 @@
                     </ul>
                   </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="analytics/">ANALYTICS</a>
+                    <a class="nav-link" href="analytics">ANALYTICS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ideas/">IDEAS</a>
+                    <a class="nav-link" href="ideas">IDEAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="working/">HOW IT WORKS</a>
+                    <a class="nav-link" href="working">HOW IT WORKS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="team/">TEAM</a>
+                    <a class="nav-link" href="team">TEAM</a>
                 </li>
             </ul>
         </div>
@@ -62,7 +62,8 @@
     <div class="container-fluid">
         <div style="text-align:center;">
             <h2 style="margin-top:3em;margin-bottom:3em;">ANALYTICS</h2>
-            <h4 style="margin-top:3em;margin-bottom:3em;" id="scroll-beginning">Click <a href="#map-section">here</a> to see a year on year prediction and our unique job web representation</h4>
+            <h4 style="margin-top:3em;" id="scroll-beginning">Click <a href="#map-section">here</a> to see a year on year prediction and our unique job web representation</h4><br>
+            <h4 style="margin-bottom:3em;">Click on anyone of the graphs to interact with it</h4>
         </div>
 
         <div class="row">
@@ -71,7 +72,7 @@
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-1" class="analytics-img shadow" onclick="redirfl(1)"></img>
             </div>
-            <div class="col-xl-1"></div>
+            <div class="col-xl-2"></div>
             <!-- 2 -->
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-2" class="analytics-img shadow" onclick="redirfl(2)"></img>
@@ -94,7 +95,7 @@
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-4" class="analytics-img shadow" onclick="redirfl(4)"></img>
             </div>
-            <div class="col-xl-1"></div>
+            <div class="col-xl-2"></div>
             <!-- 5 -->
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-5" class="analytics-img shadow" onclick="redirfl(5)"></img>
@@ -117,7 +118,7 @@
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-7" class="analytics-img shadow" onclick="redirfl(7)"></img>
             </div>
-            <div class="col-xl-1"></div>
+            <div class="col-xl-2"></div>
             <!-- 8 -->
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-8" class="analytics-img shadow" onclick="redirfl(8)"></img>
@@ -140,7 +141,7 @@
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-10" class="analytics-img shadow" onclick="redirfl(10)"></img>
             </div>
-            <div class="col-xl-1"></div>
+            <div class="col-xl-2"></div>
             <!-- 11 -->
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-11" class="analytics-img shadow" onclick="redirfl(11)"></img>
@@ -163,7 +164,7 @@
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-13" class="analytics-img shadow" onclick="redirfl(13)"></img>
             </div>
-            <div class="col-xl-1"></div>
+            <div class="col-xl-2"></div>
             <!-- 14 -->
             <div class="col-xl-4 analytics">
                 <img id="fl-gh-14" class="analytics-img shadow" onclick="redirfl(14)"></img>
@@ -174,8 +175,11 @@
         <div class="row" style="margin-top: 5em;">
             <div class="col-xl-3"></div>
             <div class="col-xl-6">
-                <h4 style="text-align: justify;">
+                <h4 style="text-align: center;">
                     To see our unique 3D visualisation as the direct result of our Algorithms, click <a href="job-web/">here</a>.
+                </h4><br><br>
+                <h4 style="text-align: center;">
+                    Click on a district to view job availability. Move the slider to change time period.
                 </h4>
             </div>
 
@@ -248,6 +252,7 @@
                 <div class="slidecontainer">
                     <input type="range" min="2010" max="2030" value="2020" class="slider slidecontainer" id="year-slider">
                     <p class="center">Year : <span class= "center2" id="year-notifier"></span></p>
+                    <p class="center">Location : <span class= "center2" id="loc-notifier"></span></p><br>
                 </div>
             </div>
 
