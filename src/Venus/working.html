@@ -14,8 +14,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="assets/css/teams.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <style>
@@ -57,42 +57,52 @@ img {
 .container {
   padding: 2px 16px;
 }
+
+.heading-txt{
+  height: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
 </style>
 
 <body class="body" >
 
-		<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand, left" href="ind.html">
-					<img src="assets/img/Logo-DarkBlue.png" alt="Logo" width ="85px" height="75px">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-			
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			
-				  <ul class="navbar-nav mr-auto nav-fill w-100">
-			
-					<li class="nav-item">
-					  <a class="nav-link" href="index.html">HOME </a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="analysis.html">ANALYTICS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ideas1.html">IDEAS</a>
-					</li>
-					<li class="nav-item">
-							<a class="nav-link" class="active" href="working.html">HOW IT WORKS</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link"  href="team.html">TEAM</a>
-					</li>
-			
-				  </ul>
-			
-				</div>
-    </nav>
+  <nav class="navbar navbar-expand-xl navbar-light">
+    <a class="navbar-brand, left" href="analytics/">
+        <img src="assets/img/Logo-DarkBlue.png" alt="Logo" width ="85px" height="75px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-fill w-100">
+              <li class="dropdown nav-item" style="margin-top: 8px;">
+                <a class="dropdown-toggle dm-nav" data-toggle="dropdown" style="text-decoration: none;color:#7c6d41" href="#">PROFILE
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: #f9db6d; text-align: center;padding-left:10px;padding-right: 10px;">
+                  <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Student')">STUDENT</a></li>
+                  <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Government')">GOVERNMENT</a></li>
+                  <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Educational_Institution')">EDUCATIONAL INSTITUTION</a></li>
+                  <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Job_Seeker')">JOB SEEKER</a></li>
+                  <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Other')">OTHER</a></li>
+                </ul>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="analytics/">ANALYTICS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ideas/">IDEAS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="working/">HOW IT WORKS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team/">TEAM</a>
+            </li>
+        </ul>
+    </div>
+</nav>
     
      <!-- <div class = "page-header fluidcontainer" style="margin-bottom: -80px; margin-top: 120px; margin-left:660px">
         <h1>
@@ -105,7 +115,7 @@ img {
 <div style="padding-top: 80px; padding-bottom: 60px">
         <div style="text-align: center">
                 <h1>
-                    PROCESS 
+                    HOW IT WORKS
                 </h1>
         </div>
 </div>
@@ -141,28 +151,28 @@ img {
         <div class="row enoughspace">
         </br>
             <div class="col-lg-3 enoughspace">
-                    <h2>Bayesian Association Rule Mining</h2>
+                    <h2 class="heading-txt">Bayesian Association</h2>
             </br>
                     <p>An algorithm that allows us to mine and discover inter-dependencies and associations among jobs positions in a sector and across various sectors.
                         </p>
                     <!-- Content -->
             </div>
             <div class="col-lg-3 enoughspace">
-                    <h2>Apriori Algorithm</h2>
+                    <h2 class="heading-txt">Apriori Algorithm</h2>
                 </br>
                         <p>Finely-tuned algorithms that come under the family of association rule mining algorithm to uncover hidden patterns amongst job position trends conditioned on sector trends.
                             </p>
                     <!-- Content -->
             </div>
             <div class="col-lg-3 enoughspace">
-                    <h2>Naive Bayes</h2>
+                    <h2 class="heading-txt">Naive Bayes</h2>
                 </br>
                         <p>Using a two level data collection process (job position and sector trends), we are able to reduce noise in our novel job web. We condition the job position trends on the sector trends that the job position falls under.
                             </p>
                     <!-- Content -->
             </div>
             <div class="col-lg-3 enoughspace">
-                    <h2>Natural Language Processing (NLP)</h2>
+                    <h2 class="heading-txt">Natural Language Processing (NLP)</h2>
             </br>
                     <p>State of the art Tokenization, Lemmatization, Stopwords and POS tagging to extract only the relevant information the large data dumps we have collected.
                         </p>
@@ -216,7 +226,7 @@ img {
 <div class="container" id="topic2" style="display: none;">
       <div class="row">
           <div class="col-lg-6 enoughspace">
-              <h2> Elasticsearch</h2>
+              <h2 class="heading-txt"> Elasticsearch</h2>
           </br>
               <p>This distributed, open-source search and analytics engine has drastically reduced our query time and in short, made our lives easier.</p>
                
@@ -227,7 +237,7 @@ img {
           </div>
           
           <div class="col-lg-6 enoughspace">
-                <h2> PostgreSQL</h2>
+                <h2 class="heading-txt"> PostgreSQL</h2>
             </br>
                 <p>Postgres is another open-source database that is perfect for our processed and structured data. </p>
                 <p>This is the database our server directly interacts with. It’s highly extensible and like all our other technologies, a great fit for our solution. </p>
@@ -283,21 +293,21 @@ img {
 <div class="container" id="topic3" style="display: none;">
       <div class="row">
           <div class="col-lg-4 enoughspace">
-              <h2>Historic Data</h2>
+              <h2 class="heading-txt">Historic Data</h2>
           </br>
                 <p>Our historical data comes from many sources including, CEIC, Central Statistics Office and Statista just to name a few.</p>
                 <p>This data is crucial in understanding patterns and trends in order to see whether they recur in the future. </p>
                   <!-- Content -->
           </div>
           <div class="col-lg-4 enoughspace">
-              <h2>RSS feed for Live News</h2>
+              <h2 class="heading-txt">RSS feed for Live News</h2>
           </br>
                 <p>Our RSS bot scrapes live news in order for us to keep a track of all upcoming industry events.</p>
                 <p> It could be new offices, headquarters, layoffs or mergers. We want to make sure we’re up to date so that our users are better informed of jobs to be on the lookout for. </p>
                   <!-- Content -->
           </div>
           <div class="col-lg-4 enoughspace">
-              <h2>Scrapers</h2>
+              <h2 class="heading-txt">Scrapers</h2>
           </br>
                 <p>We use web scrapers to get job data from websites like Indeed and Monster.</p>
                 <p>This data enables us to predict the salary and requirements for future jobs that may come up by looking at the qualifications required by jobs that currently exist.</p>
@@ -352,7 +362,7 @@ img {
 <div class="container" id="topic4" style="display: none;">
       <div class="row">
           <div class="col-lg-6 enoughspace">
-                <h2> Summariser</h2>
+                <h2 class="heading-txt"> Summariser</h2>
           </br>
                 <p>To make sense of all our data and extract the relevant information we need, we use our summariser program</p>
                 <p> It simply takes our text file and gives us a concise understanding of the text without us having to waste a huge amount of time reading and understanding the entire article.
@@ -361,7 +371,7 @@ img {
           </div>
 
           <div class="col-lg-6 enoughspace">
-              <h2>OCR Bot</h2>
+              <h2 class="heading-txt">OCR Bot</h2>
           </br>
                 <p>We came across a lot of scanned copies of information that we could not possibly parse.</p>
                 <p>OCR bot converts the text inside those images and scanned copies into machine readable text after which it’s ready to be put into our database.
@@ -379,12 +389,42 @@ img {
       </div>
 </div>
 
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6">
+                  <!--Column1-->
+                  <div class="footer-pad">
+                      <ul class="list-unstyled"><br>
+                          <li><a href="https://rasp.team/home">HOME</a></li>
+                          <li><a href="https://rasp.team/analytics">ANALYTICS</a></li>
+                          <li><a href="https://rasp.team/ideas">IDEAS</a></li>
+                          <li><a href="https://rasp.team/working">HOW IT WORKS</a></li>
+                          <li><a href="https://rasp.team/team">TEAM</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <!--Column1-->
+                  <div class="footer-pad">
+                      <h4>PROJECT JOOPITER</h4>
+                      <dl class="list-unstyled">
+                          <dd>Job trends, patterns and prediction. We show you future opportunities by learning from the past.</dd>
+                      </dl>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Copyright 2020 - TEAM RASP.  All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
 
-
-
-
-
-
+<script type="text/javascript" src="assets/js/glob.js"></script>
 
   <script>
         function myFunction1() {

@@ -21,8 +21,8 @@
 
 <body class="body">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand, left" href="/">
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand, left" href="analytics/">
             <img src="assets/img/Logo-DarkBlue.png" alt="Logo" width ="85px" height="75px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,18 @@
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav-fill w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">HOME</a>
-                </li>
-                <li class="nav-item">
+                  <li class="dropdown nav-item" style="margin-top: 8px;">
+                    <a class="dropdown-toggle dm-nav" data-toggle="dropdown" style="text-decoration: none;color:#7c6d41" href="#">PROFILE
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="background-color: #f9db6d; text-align: center;padding-left:10px;padding-right: 10px;">
+                      <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Student')">STUDENT</a></li>
+                      <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Government')">GOVERNMENT</a></li>
+                      <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Educational_Institution')">EDUCATIONAL INSTITUTION</a></li>
+                      <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Job_Seeker')">JOB SEEKER</a></li>
+                      <li><a style="color: #7c6d41;cursor:pointer;" onclick="chprof('Other')">OTHER</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="analytics/">ANALYTICS</a>
                 </li>
                 <li class="nav-item">
@@ -43,7 +51,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="working/">HOW IT WORKS</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="team/">TEAM</a>
                 </li>
             </ul>
@@ -51,6 +59,7 @@
     </nav>
 
     <div class="container" style="margin-top: 5em;">
+        <h3 style="text-align: center;">You asked for it, you got it.</h3>
         <div id="fl-viz" class="flourish-embed flourish-chart"></div>
     </div>
 
@@ -78,6 +87,42 @@
     </script>
     <script src="https://public.flourish.studio/resources/embed.js"></script>
 
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <ul class="list-unstyled"><br>
+                                <li><a href="https://rasp.team/home">HOME</a></li>
+                                <li><a href="https://rasp.team/analytics">ANALYTICS</a></li>
+                                <li><a href="https://rasp.team/ideas">IDEAS</a></li>
+                                <li><a href="https://rasp.team/working">HOW IT WORKS</a></li>
+                                <li><a href="https://rasp.team/team">TEAM</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>PROJECT JOOPITER</h4>
+                            <dl class="list-unstyled">
+                                <dd>Job trends, patterns and prediction. We show you future opportunities by learning from the past.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 - TEAM RASP.  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+      <script type="text/javascript" src="assets/js/glob.js"></script>
 
     </body>
     </html>

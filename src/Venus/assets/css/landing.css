@@ -167,6 +167,10 @@ animation-delay: 1s;
 animation-delay: 1.2s;
 }
 
+.loading__letter:nth-child(11) {
+animation-delay: 1.2s;
+}
+
 @keyframes bounce {
 0% {
     transform: translateY(0px)
