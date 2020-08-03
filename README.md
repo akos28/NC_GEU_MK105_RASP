@@ -9,6 +9,7 @@
 
 * [About RASP](#about-rasp)
   * [Built With](#built-with)
+* [Pipeline](#pipeline)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -28,6 +29,12 @@ Major frameworks that we used to build our project:
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * [Elasticsearch](https://www.elastic.co/)
 * [PostgreSQL](https://www.postgresql.org/)
+
+## Pipeline
+
+<p align="center">
+  <img src="./img/updated_RASP-Arch.png" alt="RASP Pipeline">
+</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
