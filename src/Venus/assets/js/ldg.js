@@ -58,5 +58,5 @@ async function send_profession(option){
 
     // TODO: Call API
     ttr = Math.random()*1000%800+1300;await delay(ttr);
-    window.location.href ="analytics.html"
+    window.location.href ="analytics"
 }
