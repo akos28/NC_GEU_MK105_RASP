@@ -1,6 +1,7 @@
+from __future__ import division
+
 import numpy as np
 import math
-from __future__ import division
 
 from nltk.stem import WordNetLemmatizer
 import nltk
@@ -248,14 +249,13 @@ def weight_matrix(
 
         if np.sum(np.fabs(prev_score - score)
                   ) <= threshold:  # convergence condition
-            print "Converging at iteration " + str(iter) + "...."
+            print("Converging at iteration " + str(iter) + "....")
             break
 
     return score
 
-
-def summarization(sentences, score):
-    """Summarize the text
+def summary(sentences, score):
+    """Summary from sentences and associated score
 
     Parameters
     ----------
@@ -296,3 +296,32 @@ def summarization(sentences, score):
             break
 
     return summary
+
+
+def summarization(text):
+    """Summarize the text
+
+    Parameters
+    ----------
+        text : str
+            Text dump
+    Returns
+    -------
+        summary : str
+            String of summarized text
+    """
+    cleaned_text = clean(text)
+
+    tokenized_text, case_insensitive_text = tokenize()
+
+    sentences, tokenized_sentences = sent_segm(cleaned_text, tokenized_text)
+
+    POS_tagged_text, lemmatized_text, Processed_text = preprocessing(case_insensitive_text)
+
+    stopwords = generate_stopwords(POS_tagged_text)
+
+    score = weight_matrix(tokenized_sentences, lemmatized_sentence, sentence, POS_tagged_sentence, stopwords)
+
+    summary_ = summary(sentences, score)
+
+    return summary_
