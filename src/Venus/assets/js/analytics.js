@@ -87,7 +87,7 @@ function redirfl(number){
     if(typeof(Storage) !== "undefined") {
         stringi = String(number);
         localStorage.flviz = bloop["links"][stringi];
-        document.location.href="visualize/"
+        document.location.href="visualize"
     } else{
         alert("We're sorry, but your browser doesn't support a feature we use. ERR: LS03");
     }
