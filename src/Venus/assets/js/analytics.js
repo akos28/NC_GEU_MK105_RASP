@@ -18,6 +18,14 @@ let bloop = {
     "order" : []
 }
 
+async function delay(delayInms) {
+    return new Promise(resolve  => {
+        setTimeout(() => {
+        resolve(2);
+        }, delayInms);
+    });
+}
+
 let order_govt = ["1", "2", "3", "4", "5", "6", "7", "8"];
 let order_stdt = ["9", "10", "11", "12", "13", "14"];
 let order_edin = ["10", "9", "11", "14"];
@@ -85,8 +93,8 @@ function vizzy(){
 
 function redirfl(number){
     if(typeof(Storage) !== "undefined") {
-        stringi = String(number);
-        localStorage.flviz = bloop["links"][stringi];
+        stringi = String(number-1);
+        localStorage.flviz = bloop["links"][bloop["order"][stringi]];
         document.location.href="visualize"
     } else{
         alert("We're sorry, but your browser doesn't support a feature we use. ERR: LS03");
