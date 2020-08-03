@@ -93,8 +93,6 @@ function redirfl(number){
     }
 }
 
-window.onload = vizzy();
-
 $(document).ready(function(){
 
     $("#scroll-beginning a").on('click', function(event) {
