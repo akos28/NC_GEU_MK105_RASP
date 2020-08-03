@@ -56,6 +56,52 @@ def all_():
 
     return (jsonify(response), 200)
 
+###############################################################################
+# Request for Flourish
+###############################################################################
+@Rasp.route('/v1.0/analytics', methods=['POST'])
+def analytics_():
+    if len(request.data) == 0:
+        abort(400)
+
+    if request.headers['Content-Type'] != 'application/json':
+        abort(400)
+
+    prof = request.json.get('profession')
+
+    types = ['Government', 'Student', 'Educational_Institution', 'Job_Seeker', 'Other']
+
+    order = {'Government' : ["1", "2", "3", "4", "5", "6", "7", "8"],
+        'Student' : ["9", "10", "11", "12", "13", "14"],
+        'Educational_Institution' : ["10", "9", "11", "14"],
+        'Job_Seeker' : ["9", "11", "10", "7", "1"],
+        'Other' : ["6", "7", "10", "9", "11", "1", "12", "8"]}
+
+    response = {}
+    response["links"] = {
+                "1" : "3357665",
+                "2" : "3354906",
+                "3" : "3360711",
+                "4" : "3360930",
+                "5" : "3364182",
+                "6" : "3361330",
+                "7" : "3361498",
+                "8" : "3363781",
+                "9" : "3363488",
+                "10" : "3364076",
+                "11" : "3363628",
+                "12" : "3363780",
+                "13" : "3361311",
+                "14" : "3361821"
+            }
+
+    if prof in types:
+        response["order"] = order[prof]
+    else:
+        abort(400)
+
+    return (jsonify(response), 200)
+
 
 ###############################################################################
 # Request for Job data at location/locations, of a sector/sectors
