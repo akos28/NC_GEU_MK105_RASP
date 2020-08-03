@@ -233,21 +233,21 @@ class PostgresUpdate():
                 Response from DB
         """
         assert isinstance(description, str) and len(
-            description) > 5, 'description should be type string and len > 5!'
+            description) > 5, 'description {} should be type string and len > 5!'.format(description)
 
         assert isinstance(location, str) and len(
-            location) > 5, 'location should be type string and len > 5!'
+            location) > 5, 'location {} should be type string and len > 5!'.format(location)
 
         assert isinstance(sector, str) and len(
-            sector) > 5, 'sector should be type string and len > 5!'
+            sector) > 1, 'sector {} should be type string and len > 5!'.format(sector)
 
         if requirements is not None:
             assert isinstance(requirements, list) and len(requirements) > 0 and len(
-                requirements) <= 5, 'requirements should be type list and 5 >= len > 0!'
+                requirements) <= 5, 'requirements {} should be type list and 5 >= len > 0!'.format(requirements)
 
             for val in requirements:
                 assert isinstance(val, tuple) and len(
-                    val) == 2, 'each requirement should be type tuple and len = 2!'
+                    val) == 2, 'each requirement {} should be type tuple and len = 2!'.format(val)
 
                 assert isinstance(val[0], str) and len(
                     val[0]) > 0, 'each requirement name should be type str and len > 0!, got {}'.format(requirements)
@@ -257,15 +257,15 @@ class PostgresUpdate():
 
         if salary is not None:
             assert isinstance(
-                salary, int) and salary > 0, 'salary should be type int and salary > 0!'
+                salary, int) and salary > 0, 'salary {} should be type int and salary > 0!'.format(salary)
 
         if year is not None:
             assert isinstance(
-                year, int), 'year should be type int!'
+                year, int), 'year {} should be type int!'.format(year)
 
         if month is not None:
             assert isinstance(
-                month, int) and month > 0 and month < 13, 'month should be type int and 0 < month < 13!'
+                month, int) and month > 0 and month < 13, 'month {} should be type int and 0 < month < 13!'.format(month)
 
         # Update all prev job listings as old
         self.cur.execute('UPDATE job SET new = 0;')
