@@ -9,9 +9,13 @@ async function delay(delayInms) {
 document.getElementById("section-1").onclick = async function(){
     document.getElementById("sec-1-l-1").classList.remove("animate__slow");
     document.getElementById("sec-1-l-2").classList.remove("animate__slow");
+    document.getElementById("c-t-c").classList.remove("animate__slow");
+    document.getElementById("c-t-c").classList.remove("animate__delay-2s");
+    document.getElementById("c-t-c").classList.remove("animate__bounceInLeft");
     document.getElementById("sec-1-l-2").classList.remove("animate__delay-1s");
     document.getElementById("sec-1-l-1").classList.add("animate__fadeOut", "animate__fast");
     document.getElementById("sec-1-l-2").classList.add("animate__fadeOut", "animate__fast");
+    document.getElementById("c-t-c").classList.add("animate__fadeOut", "animate__fast");
 
     await delay(850);
 
