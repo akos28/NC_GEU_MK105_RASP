@@ -63,24 +63,26 @@ function render_data(year) {
 		for (new_job in year_data[sector]["new"]){
 			unit += "<div class=\"output-job-new\">"
 			unit += "<p class=\"output-job-title\">"+new_job+"</p>"
-			unit += "<p class=\"output-job-pay\">"+year_data[sector]["new"][new_job]["pay"]+"</p>"
+			unit += "<p class=\"output-job-pay\">₹ "+year_data[sector]["new"][new_job]["pay"]+"</p>"
 			unit += "<p class=\"output-job-requirements-block\">"
 			for (requirement in year_data[sector]["new"][new_job]["requirements"]){
 				unit += "<span class=\"output-job-requirement\">"+requirement+"</span> "
-				unit += "<span class=\"output-job-requirement-value\">"+year_data[sector]["new"][new_job]["requirements"][requirement]+"</span> | "
+				unit += "<span class=\"output-job-requirement-value\">"+parseFloat(year_data[sector]["new"][new_job]["requirements"][requirement])*100+"%</span> | "
 			}
+			unit = unit.slice(0, -3); 
 			unit += "</p>"
 			unit +="</div>"
 		}
 		for (old_job in year_data[sector]["old"]){
 			unit += "<div class=\"output-job-old\">"
 			unit += "<p class=\"output-job-title\">"+old_job+"</p>"
-			unit += "<p class=\"output-job-pay\">"+year_data[sector]["old"][old_job]["pay"]+"</p>"
+			unit += "<p class=\"output-job-pay\">₹ "+year_data[sector]["old"][old_job]["pay"]+"</p>"
 			unit += "<p class=\"output-job-requirements-block\">"
 			for (requirement in year_data[sector]["old"][old_job]["requirements"]){
 				unit += "<span class=\"output-job-requirement\">"+requirement+"</span> "
-				unit += "<span class=\"output-job-requirement-value\">"+year_data[sector]["old"][old_job]["requirements"][requirement]+"</span> | "
+				unit += "<span class=\"output-job-requirement-value\">"+parseFloat(year_data[sector]["old"][old_job]["requirements"][requirement])*100+"%</span> | "
 			}
+			unit = unit.slice(0, -3); 
 			unit += "</p>"
 			unit +="</div>"
 		}
@@ -112,14 +114,18 @@ let prev_loc = "";
 
 function locationClick(location){
 	post_data = {}
+	document.getElementById("loc-notifier").innerText = String(location);
+	location.replace(" ", "_");
 	post_data.location = new Array(location);
-
+	console.log(location)
 	try{
+		prev_loc.replace(" ", "_");
 		document.getElementById(prev_loc).fill = "#FBF7F5";
 	} catch{
 		a = 1;
 	}
 
+	console.log(location);
 	document.getElementById(location).fill = "#d8d3d0";
 	prev_loc = location;
 

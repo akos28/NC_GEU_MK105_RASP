@@ -285,18 +285,18 @@ body{
 
 .analytics{
     margin-top: 5em;
-    align-content: center;
 }
 
 .analytics-img {
-    background:"#424242";
-    border: 0px;
-    border-radius: 0.3rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* height: 575px;
-    width: ; */
+    cursor: pointer;
+    background:"#424242";
+    border: 0px;
+    border-radius: 0.3rem;
+    width: 100%;
+    max-width: 500px;
 }
 
 footer {
