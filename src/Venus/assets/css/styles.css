@@ -86,14 +86,6 @@ body{
     font-weight: bolder;
 }
 
-.map{
-    margin-left: 40px;
-    margin-right: 20px;
-    margin-bottom: -40px;
-    margin-top: -80px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .district-svg:hover{
     cursor: pointer;
     fill: #aca9a7;
@@ -284,8 +276,18 @@ body{
     z-index: 999;
 }
 
-.analytics-card{
+.analytics{
+    margin-top: 5em;
+    align-content: center;
+}
+
+.analytics-img {
+    background:"#424242";
+    border: 0px;
+    border-radius: 0.3rem;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
+    /* height: 575px;
+    width: ; */
 }

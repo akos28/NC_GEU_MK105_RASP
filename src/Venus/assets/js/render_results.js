@@ -104,9 +104,24 @@ slider.oninput = function(){
 	render_data(this.value);
 }
 
+let locations = ["Uttarakshi", "Chamoli", "Pithoragarh", "Champawat",
+	"Udham_Singh_Nagar", "Nainital", "Garhwal", "Hardwar", "Dehradun",
+	"Tehri_Garhwal", "Rudraprayag", "Bageshwar", "Almora"]
+
+let prev_loc = "";
+
 function locationClick(location){
 	post_data = {}
 	post_data.location = new Array(location);
+
+	try{
+		document.getElementById(prev_loc).fill = "#FBF7F5";
+	} catch{
+		a = 1;
+	}
+
+	document.getElementById(location).fill = "#d8d3d0";
+	prev_loc = location;
 
 	console.log(post_data)
 	$.ajax({
