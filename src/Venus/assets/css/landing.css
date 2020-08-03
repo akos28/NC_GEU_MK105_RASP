@@ -1,0 +1,181 @@
+.landing-logo{
+    margin-top:0.5em;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    background-color: #f9db6d;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-landing {
+    /* cursor: pointer; */
+    font-weight: 200;
+    font-size: 3em;
+    padding-right: 10vw;
+    padding-left:10vw;
+    color: #25283d;
+    background-color: #f9db6d;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-text{
+    margin-top: 35vh;
+}
+
+#section-1{
+    cursor: pointer;
+}
+
+.next-icon{
+    position: fixed;
+    top: 85vh;
+    right: 10vw;
+}
+
+.next-icon:hover{
+    cursor: pointer;
+}
+
+#renderable-buttons{
+    margin-top: 20vh;
+}
+
+button {
+    position: relative;
+    margin: 0;
+    padding: 5px 12px;
+    height: 10vh;
+    max-height: 60px;
+    width: 250px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #F8F7FF;
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button span {
+    color: #084B83;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.btn-shine {
+    border: 0px black inset;
+    overflow: hidden;
+    position: relative;
+    margin-bottom:30px;
+}
+.btn-shine span {
+    z-index: 20;
+}
+.btn-shine:after {
+    background: #0f3577;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+.btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-slide-line.center:after {
+    left: 50%;
+}
+.btn-slide-line:after {
+    position: absolute;
+    right: 0;
+    left: auto;
+    transition: 0.3s;
+    content: '';
+    width: 0;
+    bottom: 0;
+    height: 3px;
+    background: #164ca7;
+}
+.btn-slide-line:hover {
+    cursor: pointer;
+}
+.btn-slide-line:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.loading {
+    display: flex;
+    flex-direction: row;
+  }
+.loading__letter {
+font-weight: 200;
+/* letter-spacing: 4px; */
+/* text-transform: uppercase; */
+color: #25283d;
+animation-name: bounce;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+.loading__letter:nth-child(2) {
+animation-delay: .1s; 
+}
+.loading__letter:nth-child(3) {
+animation-delay: .2s;
+}
+.loading__letter:nth-child(4) {
+animation-delay: .3s; 
+}
+.loading__letter:nth-child(5) {
+animation-delay: .4s;
+}
+.loading__letter:nth-child(6) {
+animation-delay: .5s; 
+}
+.loading__letter:nth-child(7) {
+animation-delay: .6s;
+}
+.loading__letter:nth-child(8) {
+animation-delay: .8s;
+}
+.loading__letter:nth-child(9) {
+animation-delay: 1s;
+}
+.loading__letter:nth-child(10) {
+animation-delay: 1.2s;
+}
+
+@keyframes bounce {
+0% {
+    transform: translateY(0px)
+}
+40% {
+    transform: translateY(-10px);
+}
+80%,
+100% {
+    transform: translateY(0px);
+}
+}
