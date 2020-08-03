@@ -129,6 +129,8 @@ def request_():
     if len(lid) == 0:
         abort(401)  # missing values
 
+    lid = lid.replace("_", " ")
+
     # Check if locations exists
     lid_ = {}
     response['invalid_location'] = []

@@ -3,9 +3,16 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
+* [About Pipeline](#about-pipeline)
 * [About ES & PS Workers](#about-workers)
 * [Usage](#usage)
 * [Wrappers](#wrappers)
+
+## About Pipeline
+
+<p align="center">
+  <img src="./img/ML-pipe.png" alt="ML Pipeline">
+</p>
 
 <!-- ABOUT THE PROJECT -->
 ## About Workers
