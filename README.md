@@ -1,10 +1,48 @@
-This is the official repository of Team RASP for SIH 2020.
-Problem Statement#MK105
+<p align="center">
+  <img src="./img/darkbluelogo.png" alt="RASP">
+</p>
 
-The branches:
+# RASP
 
-Venus-* is the front-end work
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Maeve is the big data & ML work
+* [About RASP](#about-rasp)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
 
-Philomath is the data acquisiton work
+<!-- ABOUT THE PROJECT -->
+## About RASP
+
+
+
+### Built With
+Major frameworks that we used to build our project:
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Elasticsearch](https://www.elastic.co/)
+* [PostgreSQL](https://www.postgresql.org/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Here are the instructions on how to set up our project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+A list softwares, libraries etc. that you will need:
+* Python3.5 or newer
+* Elasticsearch
+* PostgreSQL
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/akos28/NC_GEU_MK105_RASP.git
+```
+
+## Usage
