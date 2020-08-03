@@ -67,3 +67,6 @@ if __name__ == '__main__':
     text = ocr.pdf_processing()
     summary = summarization(text)
     uids.append(ec.create_doc('pdf', 'news', summary))
+
+    df_uids = pd.DataFrame(uids)
+    pd.to_pickle(df_uids, '/tmp/log-' + str(time.time) + '-.log')
