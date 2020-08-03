@@ -683,7 +683,7 @@ new Zdog.Shape({//for edu
 var edu = new Zdog.Text({
     addTo: illo,
     font: font,
-    value: "Education and Training",
+    value: ["Education", "and Training"],
     translate: {x: 50, y: -205, z: 200},
     fontSize: 15,
     textAlign: 'center',
