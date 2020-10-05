@@ -2,7 +2,7 @@
   <img src="./img/darkbluelogo.png" alt="RASP">
 </p>
 
-# RASP
+# Team RASP - Project Joopiter
 
 Visit our website at: [https://rasp.team](https://rasp.team).
 
@@ -25,6 +25,8 @@ We decided the best way to work was to split our team into 3 divisions:
   * **Philomath** - Data acquisition division
   * **Venus** - Front-end division
   * **Maeve** - Big Data & ML analysis division
+
+For detailed explanation about Project Joopiter, you can read [this](https://icecereal.github.io/blog/we-won-the-smart-india-hackathon/) blog article.
 
 ### Built With
 Major frameworks that we used to build our project:
