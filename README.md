@@ -4,7 +4,7 @@
 
 # Team RASP - Project Joopiter
 
-Visit our website at: [https://rasp.team](https://rasp.team).
+Visit our website at: [https://rasp.team](https://icecereal.github.io/rasp-redirect).
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
